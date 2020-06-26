@@ -1,0 +1,1 @@
+{"id":"f4e6c302-2128-4db1-9e82-c78359eb90de","name":"dsp-hack-demo","spl":"| from read_splunk_firehose() | into dev_null();"}
