@@ -1,1 +1,0 @@
-{"id":"3f193c0b-8410-497a-b48d-6606fd703113","name":"dsp-hack-58","spl":"| from read_splunk_firehose(\"LATEST\") | apply_timestamp_extraction fallback_to_auto=false extraction_type=\"auto\" | into write_null();"}
