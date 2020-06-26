@@ -1,1 +1,1 @@
-{"id":"9c1eb734-a164-4d46-85d0-3d32bf50c274","name":"dsp-hack-18","spl":"| from read_splunk_firehose() | into dev_null();"}
+{"id":"9c1eb734-a164-4d46-85d0-3d32bf50c274","name":"dsp-hack-18","spl":"| from read_splunk_firehose() | apply_timestamp_extraction fallback_to_auto=false extraction_type=\"auto\" | into dev_null();"}
