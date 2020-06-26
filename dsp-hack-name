@@ -1,1 +1,0 @@
-{"id":"dsp-hack-id","name":"dsp-hack-name","spl":"| from read_splunk_firehose();"}
