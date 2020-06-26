@@ -36,7 +36,7 @@ def dsp_calls(action, commit_files):
         lines = file1.readlines()
         for line in lines:
             pipeline = json.loads(line)
-            compile_spl_response = compile_pipeline(str(pipeline["spl"]))
+            compile_spl_response = compile_pipeline(str(pipeline["spl"]).replace('"', '\\"'))
             if compile_spl_response.find("HTTPStatusCode") != -1:
                 print(compile_spl_response)
                 sys.exit(1)
